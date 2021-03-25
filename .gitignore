@@ -1,3 +1,6 @@
+allure-results/
+cookie.txt
+
 # Logs
 logs
 *.log
