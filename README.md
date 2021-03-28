@@ -4,7 +4,7 @@
 
 To run test just use the following command:
 ```
-npx wdio run wdio.conf.js
+npm start
 ```
 
 ## Scenario
