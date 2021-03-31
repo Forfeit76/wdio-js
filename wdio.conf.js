@@ -1,4 +1,6 @@
 exports.config = {
+    debug: true,
+    execArgv: ['--inspect=127.0.0.1:5859'],
     runner: 'local',
     specs: [
         './test/specs/**/*.js'
