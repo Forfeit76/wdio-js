@@ -4,9 +4,8 @@ class WebdriverIoMainPage {
     
     get announcement () { return $(".//div[contains(@class,'announcementBarContent')]") }
 
-    async saveCookie() {
-        const cookie = await browser.getCookies();
-        console.log(`X = ${JSON.stringify(cookie)}`);
+    saveCookie() {
+        const cookie = browser.getCookies();
         fs.writeFile('cookie.txt', JSON.stringify(cookie), function (err) {
         });
     }
