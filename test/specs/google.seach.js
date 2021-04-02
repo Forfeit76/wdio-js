@@ -11,9 +11,9 @@ describe('Test google search functionality', () => {
         SearchPage.closePopUp();
         SearchPage.searchText(searchText);
         SearchPage.chooseFirstSuggestion();
-        expect(SearchResultPage.resultTitle).toHaveTextContaining(resultText);
+        expect(SearchResultPage.resultTitle()).toHaveTextContaining(resultText);
         SearchResultPage.openFirstSearchResult();
-        expect(WebdriverIoMainPage.announcement).toHaveTextContaining(resultText);
+        expect(WebdriverIoMainPage.announcement()).toHaveTextContaining(resultText);
         WebdriverIoMainPage.saveCookie();
     });
 });

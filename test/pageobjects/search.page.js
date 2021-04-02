@@ -6,12 +6,11 @@ class SearchPage extends BaseGooglePage {
         super();
         this.inputSearch = () => ($("[name='q']"));
         this.suggestion = () => ($(".//span[contains(text(),'wdio')]"));
-        this.introAgreeButton = () => ($("#introAgreeButton"));
-        this.iframe = () => ($("#cnsw>iframe"));
-    };
+        this.introAgreeButton = () => ($("#zV9nZe"));
+    }
 
     closePopUp() {
-        browser.switchToFrame(this.iframe());
+        // browser.pause(5000);
         this.introAgreeButton().click();
     }
 
