@@ -1,0 +1,8 @@
+{
+    "name": "google.search.e2e.tests",
+    "version": "1.0.0",
+    "description": "none",
+    "scripts": {
+        "start": "npx wdio run wdio.conf.js"
+    }
+}
