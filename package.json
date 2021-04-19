@@ -4,5 +4,9 @@
     "description": "none",
     "scripts": {
         "start": "npx wdio run wdio.conf.js"
+    },
+    "dependencies": {
+        "all": "0.0.0",
+        "wdio": "^4.0.0"
     }
 }
