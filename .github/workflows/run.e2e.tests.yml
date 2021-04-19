@@ -9,10 +9,10 @@ on:
   
   workflow_dispatch:
     inputs:
-      version:
-        description: run manually
-        default: v1.0.0
+      name:
+        description: 'name'
         required: true
+        default: 'Start auto'
 
 jobs:
   build:
