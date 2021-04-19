@@ -32,5 +32,6 @@ jobs:
     #- name: install-npm-packages
 
     - run: npm install
+    - run: npm install wdio
     #- name: run-e2e-tests
     #- run: npm start
