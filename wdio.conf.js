@@ -12,6 +12,9 @@ exports.config = {
     capabilities: [{
         maxInstances: 5,
         browserName: 'chrome',
+        'goog:chromeOptions': {
+            args: ['--headless', '--disable-gpu', '--window-size=1600,900'],
+            },
         acceptInsecureCerts: true
     }],
     // Level of logging verbosity: trace | debug | info | warn | error | silent
