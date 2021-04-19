@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: Manually
+        description: run manually
         default: v1.0.0
         required: true
 jobs:
@@ -28,5 +28,12 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
+    
+    - uses: nanasess/setup-chromedriver@master
+      with:
+       chromedriver-version: '89.0.4389.130'
+    
     - run: npm install
+    
     - run: npm start
+
