@@ -32,6 +32,7 @@ jobs:
     - uses: nanasess/setup-chromedriver@master
       with:
        chromedriver-version: '89.0.4389.130'
+    - run: chromedriver
     
     - run: npm install
     
