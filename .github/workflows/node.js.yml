@@ -28,5 +28,21 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm start
+#    - run: npm install
+    
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Install
+      uses: ianwalter/puppeteer-container@afefc4bee7341a77baa94503da684e2895ea5d30
+      with:
+        args: npm install
+    - name: Test
+      uses: ianwalter/puppeteer-container@afefc4bee7341a77baa94503da684e2895ea5d30
+      with:
+        args: npm start
+    - uses: actions/upload-artifact@v1
+      if: failure()
+      with:
+        name: logs
+        path: logs
+#    - run: npm start
