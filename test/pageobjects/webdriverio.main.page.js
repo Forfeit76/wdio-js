@@ -9,7 +9,7 @@ class WebdriverIoMainPage {
     saveCookie() {
         const cookie = browser.getCookies();
         console.log("COOKIE: " + cookie);
-        fs.writeFileSync('cookie.txt', JSON.stringify(cookie), function (err) {
+        fs.writeFileSync('./artifacts/cookie.txt', JSON.stringify(cookie), function (err) {
         });
     }
 }
