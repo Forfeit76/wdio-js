@@ -1,6 +1,6 @@
 # Study js
 
-<img src="https://github.com/Forfeit76/wdio-js/actions/workflows/e2e-tests/badge.svg?branch=main">
+<img src="https://github.com/Forfeit76/wdio-js/workflows/e2e-tests/badge.svg?branch=main">
 
 ## Running UI tests
 
