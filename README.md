@@ -4,7 +4,10 @@
 
 ## Running UI tests
 
-To run test just use the following command:
+To run test just use the following commands:
+```
+npm install
+```
 ```
 npm start
 ```
