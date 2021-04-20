@@ -13,12 +13,13 @@ exports.config = {
         maxInstances: 5,
         browserName: 'chrome',
         'goog:chromeOptions': {
-            args: [/*'--headless', */'--disable-gpu', '--window-size=1600,900'],
+            args: ['--headless', '--disable-gpu', '--window-size=1600,900'],
             },
         acceptInsecureCerts: true
     }],
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'info',
+    sync: true,
     bail: 0,
     baseUrl: 'http://www.google.com',
     waitforTimeout: 10000,
