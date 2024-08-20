@@ -1,3 +1,8 @@
+/**
+ * BaseGooglePage class representing the base page object for Google pages.
+ * @class
+ * @exports BaseGooglePage
+ */
 module.exports = class BaseGooglePage {
 
     openMainPage () {

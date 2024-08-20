@@ -8,7 +8,6 @@
             "type": "node",
             "request": "launch",
             "name": "wdio debug",
-            "port": 5859,
             "timeout": 60000,
             "cwd": "${workspaceRoot}",
             "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/wdio",

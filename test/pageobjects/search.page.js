@@ -1,12 +1,17 @@
 const BaseGooglePage = require('./google.page');
 
+/**
+ * Represents the SearchPage class for Search Page in Google.
+ * @class
+ * @extends BaseGooglePage
+ */
 class SearchPage extends BaseGooglePage {
 
      constructor() {
         super();
         this.inputSearch = () => ($("[name='q']"));
         this.suggestion = () => ($(".//span[contains(text(),'wdio')]"));
-        this.introAgreeButton = () => ($("#zV9nZe"));
+        this.introAgreeButton = () => ($("#L2AGLb"));
     }
 
     closePopUp() {

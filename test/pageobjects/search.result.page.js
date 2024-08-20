@@ -1,3 +1,7 @@
+/**
+ * Represents a page object for the search result page of Google.
+ * @extends BaseGooglePage
+ */
 const BaseGooglePage = require('./google.page');
 
 class SearchResultPage extends BaseGooglePage {
