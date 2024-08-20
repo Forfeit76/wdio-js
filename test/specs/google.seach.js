@@ -8,7 +8,7 @@ describe('Test google search functionality', () => {
         const resultText = 'WebdriverIO';
 
         SearchPage.openMainPage();
-        SearchPage.closePopUp();
+        //SearchPage.closePopUp();
         SearchPage.searchText(searchText);
         SearchPage.chooseFirstSuggestion();
         expect(SearchResultPage.resultTitle()).toHaveTextContaining(resultText);
