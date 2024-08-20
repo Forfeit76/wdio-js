@@ -13,8 +13,8 @@ exports.config = {
         maxInstances: 5,
         browserName: 'chrome',
         'goog:chromeOptions': {
-            //args: ['--headless', '--disable-gpu', '--window-size=1600,900'],
-            args: ['--disable-gpu', '--window-size=1600,900'],
+            args: ['--headless', '--disable-gpu', '--window-size=1600,900'],
+            //args: ['--disable-gpu', '--window-size=1600,900'],
             },
         acceptInsecureCerts: true
     }],
